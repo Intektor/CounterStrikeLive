@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Counter Strike Live</string>
+
+    <!-- Strings related to GamesActivity -->
+
+    <string name="games_activity_game_item_vs_label">vs.</string>
+
+    <!-- Strings related to MatchActivity-->
+    <string name="match_activity_game_log_label">Game Log</string>
+    <string name="match_activity_game_log_t_win">Terrorists Win</string>
+    <string name="match_activity_game_log_ct_win">Counter-Terrorists Win</string>
+    <string name="round_item_round_label">Round %1$d</string>
+    <string name="match_activity_game_log_round_ongoing">Round ongoing</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/border">
+
+    <ImageView
+        android:id="@+id/roundItemT1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemCT1"
+        app:srcCompat="@drawable/t_death" />
+
+    <ImageView
+        android:id="@+id/roundItemT3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemT2"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemCT3"
+        app:srcCompat="@drawable/t_death" />
+
+    <ImageView
+        android:id="@+id/roundItemT5"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemT4"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemCT5"
+        app:srcCompat="@drawable/t_death" />
+
+    <ImageView
+        android:id="@+id/roundItemT4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemT3"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemCT4"
+        app:srcCompat="@drawable/t_death" />
+
+    <ImageView
+        android:id="@+id/roundItemT2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemT1"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemCT2"
+        app:srcCompat="@drawable/t_death" />
+
+    <ImageView
+        android:id="@+id/roundItemCT2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemCT1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct_death" />
+
+    <ImageView
+        android:id="@+id/roundItemCT4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemCT3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct_death" />
+
+    <ImageView
+        android:id="@+id/roundItemCT5"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemCT4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct_death" />
+
+    <ImageView
+        android:id="@+id/roundItemCT3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemCT2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct_death" />
+
+    <TextView
+        android:id="@+id/roundItemWinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/match_activity_game_log_ct_win"
+        android:textColor="@color/color_counter_terrorists"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/roundItemCT1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/roundItemMatchImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct_death" />
+
+    <ImageView
+        android:id="@+id/roundItemMatchImage"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bomb" />
+
+    <TextView
+        android:id="@+id/roundItemRoundLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/round_item_round_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemWinLabel" />
+
+    <TextView
+        android:id="@+id/roundItemTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="00:00"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@+id/roundItemT1"
+        app:layout_constraintTop_toBottomOf="@+id/roundItemMatchImage" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/roundItemLogList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/log_kill" />
+</android.support.constraint.ConstraintLayout>
